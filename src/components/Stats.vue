@@ -95,25 +95,25 @@ const animateValue = (start, end, duration, index) => {
  */
 const overviewItems = computed(() => [
   {
-    label: '监控网站',
+    label: '监控服务',
     value: total.value,
-    desc: '全部网站',
+    desc: '全部服务',
     icon: 'bi:check-circle',
     iconColor: 'text-emerald-500',
     containerClass: 'after:border-emerald-500/50 dark:after:border-emerald-400/50'
   },
   {
-    label: '正常网站',
+    label: '正常服务',
     value: normal.value,
-    desc: '访问正常',
+    desc: '工作正常',
     icon: 'bi:check-circle-fill',
     iconColor: 'text-green-500',
     containerClass: 'after:border-green-500/50 dark:after:border-green-400/50'
   },
   {
-    label: '异常网站',
+    label: '异常服务',
     value: abnormal.value,
-    desc: '访问异常',
+    desc: '工作异常',
     icon: 'bi:x-circle-fill',
     iconColor: 'text-red-500',
     containerClass: 'after:border-red-500/50 dark:after:border-red-400/50'
