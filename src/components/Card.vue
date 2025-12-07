@@ -191,7 +191,7 @@
                    bg-white dark:bg-gray-800 border-[1.5px] border-gray-200 dark:border-gray-700 
                    rounded-lg downtime-list"
             >
-              <div class="p-4 max-h-[280px] overflow-y-auto">
+              <div class="p-4 max-h-[200px] overflow-y-auto">
                 <TransitionGroup 
                   tag="div"
                   class="space-y-2"
