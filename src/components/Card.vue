@@ -352,10 +352,10 @@ const sortedMonitors = computed(() => {
   if (!props.monitors) return []
   return [...props.monitors].sort((a, b) => {
     // 如果状态相同，保持原有顺序
-    if (a.status === b.status) return 0
+    //if (a.status === b.status) return 0
     // 将离线状态(9)排到最后
-    if (a.status === 9) return 1
-    if (b.status === 9) return -1
+    //if (a.status === 9) return 1
+    //if (b.status === 9) return -1
     // 其他状态保持原有顺序
     return 0
   })
