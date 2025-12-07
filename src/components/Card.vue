@@ -81,6 +81,7 @@
       <!-- 卡片主体：统计数据和图表 -->
       <div class="space-y-4">
         <!-- 响应时间和运行时间统计卡片 -->
+        <!--
         <div class="grid grid-cols-2 gap-4">
           <div class="inner-card relative">
             <Icon 
@@ -111,6 +112,7 @@
             </div>
           </div>
         </div>
+        -->
 
         <!-- 状态时间线图表 -->
         <div class="inner-card">
@@ -128,6 +130,8 @@
                 ]"></div>
               </div>
               <span class="text-xs">{{ getMonitorType(monitor) }} / {{ Math.floor(monitor.interval / 60) }}m</span>
+              <div class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600" />
+              <span class="text-xs">在线时间 {{ formatters.uptime(monitor.stats?.uptime) }}</span>
               <div class="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600" />
               <span :class="[
                 'text-xs font-medium',
